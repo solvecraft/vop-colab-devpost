@@ -1,18 +1,10 @@
-import { Navbar } from './navbar'
-import { Footer } from './footer'
+import { Navbar } from '../navbar'
 
-interface MainLayoutProps {
-  children: React.ReactNode
-}
-
-export function MainLayout({ children }: MainLayoutProps) {
+export function MainLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <main className="flex-1">
-        {children}
-      </main>
-      <Footer />
+      {children}
     </div>
   )
 }
