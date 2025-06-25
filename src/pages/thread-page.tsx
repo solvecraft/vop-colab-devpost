@@ -85,7 +85,7 @@ export function ThreadPage() {
   }
 
   return (
-    <MainLayout>
+    
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Back Button */}
         <motion.div
@@ -267,6 +267,6 @@ export function ThreadPage() {
           </div>
         </motion.div>
       </div>
-    </MainLayout>
+    
   )
 }

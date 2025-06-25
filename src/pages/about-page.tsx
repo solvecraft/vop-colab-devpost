@@ -87,19 +87,19 @@ export const AboutPage = () => {
 
   const timeline = [
     {
-      year: '2020',
+      year: '2024',
       title: 'The Beginning',
       description: 'Voices on Poverty started as a small blog documenting stories from communities affected by economic hardship.',
       icon: '🌱'
     },
     {
-      year: '2021',
+      year: '2025',
       title: 'Growing Community',
       description: 'Expanded to include community forums where people could share experiences and support each other.',
       icon: '🌿'
     },
     {
-      year: '2023',
+      year: '2025',
       title: 'Solution Platform',
       description: 'Launched collaborative features allowing communities to work together on practical solutions.',
       icon: '🌳'
@@ -148,7 +148,7 @@ export const AboutPage = () => {
                   <div className="text-center">
                     <span className="text-7xl block mb-2">📚</span>
                     <div className="text-xl font-bold">Our Journey</div>
-                    <div className="text-sm mt-2">Since 2020</div>
+                    <div className="text-sm mt-2">Since 2025</div>
                   </div>
                 </div>
               </div>

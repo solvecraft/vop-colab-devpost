@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { FileText, MapPin, Tag, Building } from 'lucide-react'
-import { MainLayout } from '@/components/layout/main-layout'
+
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -84,7 +84,7 @@ export function NewPostPage() {
 
   if (!user) {
     return (
-      <MainLayout>
+    
         <div className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-2xl font-bold mb-4">Authentication Required</h1>
           <p className="text-muted-foreground mb-6">
@@ -94,12 +94,12 @@ export function NewPostPage() {
             <a href="/login">Sign In</a>
           </Button>
         </div>
-      </MainLayout>
+      
     )
   }
 
   return (
-    <MainLayout>
+  
       <div className="container mx-auto px-4 py-8 max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -269,6 +269,6 @@ export function NewPostPage() {
           </Card>
         </motion.div>
       </div>
-    </MainLayout>
+   
   )
 }

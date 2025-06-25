@@ -81,19 +81,19 @@ export function HomePage() {
 
   const teamMembers = [
     {
-      name: 'Sarah Chen',
+      name: 'Hossein',
       role: 'Founder & CEO',
       avatar: '👩‍💼',
       color: 'from-pink-500 to-rose-500',
     },
     {
-      name: 'Marcus Johnson',
+      name: 'Gaurav Singh',
       role: 'Community Manager',
       avatar: '👨‍🤝‍👨',
       color: 'from-blue-500 to-indigo-500',
     },
     {
-      name: 'Dr. Amara Okafor',
+      name: 'Harsh',
       role: 'Impact Advisor',
       avatar: '👩‍🎓',
       color: 'from-green-500 to-emerald-500',

@@ -205,8 +205,56 @@ We welcome contributions from the community! Here's how you can help:
 - ♿ Accessibility improvements
 - 🔧 Performance optimizations
 
+## 🚀 Deployment
 
-```
+### Netlify Deployment
+
+This project is configured for seamless deployment on Netlify.
+
+#### Build Issues Fixed
+
+During the deployment process, we addressed several issues:
+
+1. **Cross-Platform Build Commands**
+   - Added cross-env for consistent environment variable handling across platforms
+   - Updated build script to prevent CI failures on warnings: `"build": "cross-env CI=false vite build"`
+
+2. **ESLint Configuration**
+   - Installed missing TypeScript ESLint dependencies
+   - Fixed ESLint configuration import paths
+
+3. **Proper Redirects for SPA**
+   - Added Netlify configuration to handle client-side routing
+
+#### Deployment Options
+
+##### Option 1: Continuous Deployment (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Netlify
+3. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+4. Deploy!
+
+##### Option 2: Manual Deployment
+
+1. Build your project locally: `npm run build`
+2. Drag and drop the `dist` folder to Netlify's dashboard
+3. Your site will be live in seconds
+
+##### Option 3: Netlify CLI Deployment
+
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Login to Netlify
+netlify login
+
+# Deploy the dist folder
+netlify deploy --prod --dir=dist
+````
 
 ## 🌍 Roadmap
 
